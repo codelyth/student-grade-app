@@ -36,14 +36,5 @@ Proje **MVC (Model-View-Controller)** benzeri katmanlı bir yapıya sahiptir:
 * `io`: Dosya okuma/yazma işlemlerini yönetir (`CsvStorage.java`).
 
 
-## 💻 Kurulum ve Çalıştırma
-
-1.  Projeyi bilgisayarınıza klonlayın:
-    ```bash
-    git clone [https://github.com/KULLANICI_ADIN/REPO_ADIN.git](https://github.com/KULLANICI_ADIN/REPO_ADIN.git)
-    ```
-2.  Proje klasörünü tercih ettiğiniz IDE (IntelliJ IDEA, Eclipse, NetBeans) ile açın.
-3.  `src/app/StudentGradeApp.java` dosyasını bulun ve çalıştırın.
-
 ---
 Bu proje eğitim amaçlı geliştirilmiştir.
