@@ -36,7 +36,7 @@ public class CsvStorage {
         }
     }
 
-    // YENİ EKLENEN METOT: CSV dosyasından okuyup liste döndürür (Prompt 6.1)
+    // CSV dosyasından okuyup liste döndürür
     public static List<Student> load(String path) {
         List<Student> loadedStudents = new ArrayList<>();
 

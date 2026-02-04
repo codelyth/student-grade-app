@@ -18,7 +18,7 @@ public class StudentGradeApp extends JFrame {
     // --- KAYIT SEKMESİ BİLEŞENLERİ ---
     private JTextField txtNo, txtAd, txtVize, txtFinal;
     private DefaultTableModel tableModel;
-    private JTable table; // Silme işlemi için sınıf seviyesine taşıdık
+    private JTable table; 
 
     // --- RAPOR SEKMESİ BİLEŞENLERİ ---
     private JLabel lblSinifOrt, lblEnYuksek, lblEnDusuk, lblGecen, lblKalan;
@@ -78,11 +78,11 @@ public class StudentGradeApp extends JFrame {
         JButton btnKaydet = new JButton("Kaydet (CSV)");
         JButton btnYukle = new JButton("Yükle (CSV)");
 
-        // Renklendirme (İsteğe bağlı görsel iyileştirme)
+        // Renklendirme 
         btnSil.setForeground(Color.RED); 
 
         btnPanel.add(btnEkle);
-        btnPanel.add(btnSil); // Panele ekledik
+        btnPanel.add(btnSil); 
         btnPanel.add(btnKaydet);
         btnPanel.add(btnYukle);
 
@@ -96,12 +96,12 @@ public class StudentGradeApp extends JFrame {
         // -- TABLO --
         String[] columns = {"Öğrenci No", "Ad Soyad", "Vize", "Final", "Ortalama", "Harf"};
         tableModel = new DefaultTableModel(columns, 0);
-        table = new JTable(tableModel); // Sınıf seviyesindeki değişkeni kullanıyoruz
+        table = new JTable(tableModel);
         panel.add(new JScrollPane(table), BorderLayout.CENTER);
 
         // -- ACTION LISTENERS --
         btnEkle.addActionListener(e -> ekleIslemi());
-        btnSil.addActionListener(e -> silmeIslemi()); // Listener bağlandı
+        btnSil.addActionListener(e -> silmeIslemi()); 
         btnKaydet.addActionListener(e -> kaydetIslemi());
         btnYukle.addActionListener(e -> yukleIslemi());
 

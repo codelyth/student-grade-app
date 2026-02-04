@@ -1,7 +1,7 @@
 package model;
 
 public class Student {
-	// İstenen Alanlar (Fields)
+	// Fields
     private String no;
     private String name;
     private double midterm;
@@ -9,7 +9,7 @@ public class Student {
     private double average;
     private String letter;
 
-    // Constructor (Yapıcı Metot)
+    // Constructor 
     // Ortalama ve harf notunu dışarıdan almak yerine, burada hesaplamak daha güvenlidir.
     public Student(String no, String name, double midterm, double fin) {
         this.no = no;
